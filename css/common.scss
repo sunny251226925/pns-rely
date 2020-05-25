@@ -736,6 +736,12 @@ $page-border-radius: 3px;
       text-align: center;
       padding: 0 10px;
       @include box-sizing(border-box);
+      font-size: 12px !important;
+      .select-input{
+        .input{
+          font-size: 12px !important;
+        }
+      }
     }
     .td{
       font-size: 12px;
@@ -969,7 +975,8 @@ $searchAbc-height:26px;
     .fold{
       margin-left: 10px;
       cursor: pointer;
-      color: #666
+      color: #666;
+      font-size: 12px;
     }
   }
 }
