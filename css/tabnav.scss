@@ -1,0 +1,97 @@
+/* 历史标签导航 */
+.history-tabs{
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 100%;
+  height: 24px;
+  line-height: 23px;
+  @include box-sizing(border-box);
+  border-bottom: #e1e1e1 solid 1px;
+  overflow: hidden;
+  z-index: 1;
+  .btn{
+    position: absolute;
+    top: 0;
+    width: 28px;
+    height: 24px;
+    color: $font-color-333;
+    text-align: center;
+    background-color: #fff;
+    border-top: #ddd solid 1px;
+    z-index: 1;
+    &.prev{
+      left: 0;
+      border-radius: 0 2px 0 0;
+      border-right: #ddd solid 1px;
+    }
+    &.next{
+      right: 0;
+      border-radius: 2px 0 0 0;
+      border-left: #ddd solid 1px;
+    }
+    &:hover{
+      color: #fff;
+    }
+  }
+  .list-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 32px;
+    @include box-sizing(border-box);
+    overflow: hidden;
+    .box{
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #f0f0f0;
+    .item{
+      float: left;
+      width: 120px;
+      height: 23px;
+      text-align: center;
+      margin-right: 4px;
+      text-align: center;
+      background-color: #f1f2f1;
+      border: #ddd solid 1px;
+      border-radius: 4px 4px 0 0;
+      cursor: pointer;
+      &:last-child{
+        border-right: #ddd solid 1px;
+      }
+      &.active{
+        color: #fff;
+      }
+      .text{
+        float: left;
+        width: 90px;
+        font-size: 12px;
+        text-align: center;
+        height: 100%;
+        text-indent: 15px;
+        padding-right: 10px;
+        @include box-sizing(border-box);
+      }
+      .close{
+        float: left;
+        width: 30px;
+        text-align: center;
+        height: 100%;
+      }
+    }
+    .item:first-child{
+      .text{
+        text-indent: 0;
+        width: 120px;
+      }
+    }
+  }
+}

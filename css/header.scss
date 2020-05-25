@@ -1,0 +1,304 @@
+
+$header-height: 48px;
+.header{
+  position: relative;
+  width: 100%;
+  height: $header-height !important;
+  line-height: $header-height !important;
+  background-color: #fff;
+  z-index: 2 !important;
+  @include box-sizing(border-box);
+  .header-main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    @include box-sizing(border-box);
+    .time{
+      color: #333;
+    }
+  }
+  .header-main-left{
+    float: left;
+    width: 50%;
+  }
+  .header-main-right{
+    float: right;
+    width: 50%;
+    text-align: right;
+  }
+  .header-avatar{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+  .sys-name{
+    position: relative;
+    top: -2px;
+    font-size: 16px;
+    font-weight: 800;
+    padding-left: 10px;
+  }
+  .sys-version{
+    position: relative;
+    height: 18px;
+    line-height: 16px;
+    top: -3px;
+    font-size: 12px;
+    border-radius: 12px;
+    text-align: center;
+    margin-left: 6px;
+    padding: 1px 8px;
+  }
+  .layui-nav{
+    background-color: transparent !important;
+  }
+  .layui-nav .layui-nav-item{
+    line-height: $header-height;
+    color: #333;
+  }
+  .layui-nav .layui-nav-item a{
+    padding: 0 20px 0 10px !important;
+    color: #333 !important;
+  }
+  .layui-nav-item{
+    margin-right: 5px;
+  }
+  .icongengduo-shu{
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .iconicon_Menu_Arrow{
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .home{
+    .pns-index{
+      font-size: 20px;
+      vertical-align: middle;
+      padding-right: 12px;
+      margin-right: 12px;
+      border-right: #fff solid 1px;
+    }
+  }
+  .header-logo{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 200px;
+      height: 100%;
+      text-align: center;
+      img{
+          display: inline-block;
+          height: 33px;
+      }
+  }
+}
+.logo-center {
+  margin-left: -38px;
+}
+.header.theme-bgColor{
+    .sys-name{
+        color: #fff !important;
+    }
+    .sys-version{
+        border: #fff solid 1px !important;
+        color: #fff !important;
+    }
+    .layui-nav-item{
+        color: #fff !important;
+        >a{
+            color: #fff !important;
+        }
+    }
+}
+.header-menu{
+    position: relative;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    z-index: 1;
+    background-color: #fff;
+    margin-top: 1px;
+    .menu-list{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .item{
+            position: relative;
+            float: left;
+            padding: 0 10px;
+            cursor: pointer;
+            .text{
+                font-size: 14px;
+                font-weight: 600;
+                color: #273044;
+            }
+            .layer-menu{
+                position: absolute;
+                top: 36px;
+                left: 0;
+                min-width: 240px;
+                height: 500px;
+                background-color: #f4f4f4;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #ddd;
+            }
+            .meun-item{
+                margin-right: 20px;
+                padding-top: 16px;
+                .title{
+                    margin-left: 40px;
+                    line-height: 30px;
+                    border-bottom: #ddd solid 1px;
+                    cursor: text;
+                    font-weight: bold;
+                }
+                .name{
+                    padding-left: 40px;
+                    line-height: 26px !important;
+                    font-size: 12px;
+                    &:hover{
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//系统设置浮层
+.system_layder{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  .system_layder_mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #373737;
+    opacity: 0.66;
+    filter: alpha(opacity=66);
+    z-index: 1;
+  }
+  .system_layder_main{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 260px;
+    height: 100%;
+    background-color: #f7f8f8;
+    z-index: 2;
+    .title{
+      position: relative;
+      height: 46px;
+      line-height: 46px;
+      background-color: #e7e8ea;
+      text-align: right;
+      margin-bottom: 44px;
+      .iconremove{
+        margin-right: 16px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .smartBox{
+        position: relative;
+        top: -23px;
+        left: 0;
+        text-align: center;
+        .icon_sys{
+          height: 36px;
+          line-height: 36px;
+          .iconicon-system{
+            font-size: 36px;
+            color: #666;
+          }
+        }
+        .icon_smart{
+          height: 24px;
+          line-height: 24px;
+          .iconSmartBox{
+            font-size: 20px;
+            color: #666;
+          }
+        }
+      }
+    }
+    .content{
+      position: relative;
+      width: 100%;
+      text-align: center;
+      overflow: hidden;
+      .title_tag{
+        width: 100%;
+        margin-top: 20px;
+        span{
+          padding: 0 13px;
+          height: 26px;
+          line-height: 24px;
+          font-size: 14px;
+          border: 1px solid #004dad;
+          color: #004dad;
+          border-radius: 13px;
+        }
+      }
+      .theme-color{
+        padding-top: 20px;
+        .item{
+          display: inline-block;
+          padding: 5px;
+          border: #fff solid 1px;
+          cursor: pointer;
+          margin-right: 5px;
+          border-radius: 2px;
+          span{
+            display: block;
+            height: 20px;
+            width: 20px;
+            @include box-sizing(border-box);
+          }
+          &.active{
+            border: #ddd solid 1px;
+          }
+        }
+      }
+      .layout-type{
+          position: relative;
+          width: 100%;
+          padding-top: 20px;
+          overflow: hidden;
+          .item{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+            .img{
+                display: inline-block;
+                cursor: pointer;
+                padding: 10px;
+                border-radius: 2px;
+                border: transparent solid 1px;
+                overflow: hidden;
+                img{
+                    width: 130px;
+                    height: 96px;
+                }
+                &.active{
+                    background-color: #fff;
+                    border: #eee solid 1px;
+                }
+            }
+            .text{
+                text-align: center;
+                color: #7f8b98;
+                font-size: 12px;
+            }
+        }
+      }
+    }
+  }
+}

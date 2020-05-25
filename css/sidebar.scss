@@ -1,0 +1,193 @@
+/* 侧栏导航 begin*/
+.sidebar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: all .2s;
+  z-index: 2;
+  .sidebar-logo{
+    height: 64px;
+    line-height: 64px;
+    .logo{
+      position: relative;
+      width: 140px;
+      height: 100%;
+      text-align: center;
+      margin:  0 auto;
+      img{
+        position: relative;
+        display: inline-block;
+        height: 33px;
+      }
+    }
+  }
+  .sidebar-menu{
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    height: auto;
+  }
+  .sidebar-menu-item{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    .item{
+      position: relative;
+      clear: both;
+      height: 30px;
+      line-height: 30px;
+      cursor: pointer;
+      @include box-sizing(border-box);
+      &.notbgcolor{
+        background-color: transparent !important;
+      }
+      .icon{
+        float: left;
+        width: 16px;
+        padding-left: 20px;
+        height: 100%;
+        text-align: center;
+        filter: alpha(opacity=70);
+      }
+      .arrow{
+        width: 12px;
+        height: 12px;
+      }
+      .text{
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 110px;
+        white-space: nowrap;
+        filter: alpha(opacity=70);
+        .text{
+          opacity: 1;
+          filter: alpha(opacity=100);
+        }
+      }
+      .more{
+        position: absolute;
+        right: 0;
+        padding-right: 20px;
+        filter: alpha(opacity=70);
+      }
+      &.active{
+        .icon,
+        .text,
+        .more{
+            color: #fff;
+        }
+      }
+      &.one{
+        height: 36px;
+        line-height: 36px;
+        .text{
+          font-size: 14px;
+        }
+        .more{
+          i{
+            font-size: 12px !important;
+          }
+        }
+      }
+      &.two{
+        .text{
+          font-size: 12px !important;
+        }
+        .more{
+          i{
+            font-size: 12px !important;
+          }
+        }
+      }
+      &.three{
+        .text{
+          padding-left: 70px;
+          font-size: 12px;
+        }
+      }
+    }
+    
+  }
+ 
+  .sidebar-main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 65px;
+    border-top: #24374b solid 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    @include box-sizing(border-box);
+  }
+  &.open{
+    .text,
+    .layui-nav-child{
+      display: block;
+    }
+    .iconfont{
+      font-size: 16px;
+    }
+  }
+  &.close{
+    width: 64px !important;
+    .text,
+    .layui-nav-child{
+      display: none;
+    }
+    .iconfont{
+      font-size: 20px;
+    }
+  }
+  .layui-nav-tree,
+  .layui-nav-item{
+    min-height: 45px;
+  }
+}
+
+//侧栏浮层
+.sidebar-menu-layer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 490px;
+  height: 100%;
+  border: #ddd solid 1px;
+  padding: 20px 0 20px 20px;
+  border-radius: 0 2px 2px 0;
+  box-shadow: 0 0 2px 1px #ddd;
+  background-color: #fff;
+  @include box-sizing(border-box);
+  z-index: 9;
+  .list{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .item{
+      float: left;
+      width: 33.3333%;
+      height: auto;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+    .item-title{
+      line-height: 30px;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: left;
+      border-bottom: #ddd solid 1px;
+      margin-bottom: 5px;
+      margin-right: 20px;
+    }
+    .item-text{
+      line-height: 24px;
+      font-size: 12px;
+      color: #666;
+      cursor: pointer;
+    }
+  }
+}

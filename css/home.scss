@@ -1,0 +1,61 @@
+.home-demo{
+    .layui-form-label{
+      width: 140px;
+    }
+    .layui-input-block{
+      margin-left: 170px;
+    }
+    p{
+      margin-bottom: 15px !important;
+    }
+    .icon-list{
+      position: relative;
+      width: 100%;
+      border-top: #ddd solid 1px;
+      border-left: #ddd solid 1px;
+      overflow: hidden;
+      @include box-sizing(border-box);
+      .item{
+        float: left;
+        width: 20%;
+        border-bottom: #ddd solid 1px;
+        border-right: #ddd solid 1px;
+        text-align: center;
+        padding: 10px;
+        @include box-sizing(border-box);
+        .icon{
+          width: 100%;
+          height: 30px;
+          line-height: 30px;
+          .iconfont{
+            font-size: 30px;
+          }
+          .iconfont:hover{
+            color: #333;
+            font-size: 34px;
+          }
+        }
+        .text{
+          width: 100%;
+          margin-top: 10px;
+          line-height: 20px;
+        }
+      }
+    }
+}
+
+.welcome{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    .bgImg{
+        position: relative;
+        display: inline-block;
+        top: 50%;
+        height: 500px;
+        margin-top: -250px;
+    }
+}
+  

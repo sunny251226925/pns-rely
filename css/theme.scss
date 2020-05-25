@@ -1,0 +1,307 @@
+
+@mixin theme($side,$sideHover,$sideText,$sideLogoBorder1,$sideLogoBorder2,$tabColor,$color1,$welcomeBgColor) {
+    .header{
+        .header-main-left{
+            .sys-name,
+            .sys-version{
+                color: $color1 !important;
+            }
+            .sys-version{
+                border: $color1 solid 1px;
+            }
+            .iconicon_Menu_Arrow{
+                color: $color1 !important;
+            }
+        }
+        .header-main-right{
+            .layui-nav-item{
+                >a,
+                dd,
+                .icongengduo-shu,
+                .layui-nav-more{
+                    color: $color1 !important;
+                }
+            }
+        }
+    }
+    .header-theme{
+        background-color: $side;
+        .header-main-left{
+            .sys-name,
+            .sys-version{
+                color: #fff !important;
+            }
+            .sys-version{
+                border: #fff solid 1px;
+            }
+            .iconicon_Menu_Arrow{
+                color: #fff $sideText !important;
+            }
+        }
+        .header-main-right{
+            .layui-nav-item{
+                >a,
+                dd,
+                .icongengduo-shu,
+                .layui-nav-more{
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+    .header-menu-theme{
+        .menu-list .item .meun-item .title{
+            color: $side !important;
+        }
+    }
+    .sidebar{
+        background-color: $side;
+        .sidebar-menu-item{
+            .text,.icon,.more{
+                color: $sideText;
+            }
+            .one:hover{
+                background-color: $sideHover !important;
+                .text,.icon,.more{
+                    color: #fff;
+                }
+            }
+            .item {
+                .item:hover{
+                    background-color: $sideHover !important;
+                    .text,.icon,.more{
+                        color: #fff;
+                    }
+                }
+                .item.active{
+                    background-color: $sideHover;
+                    .text,.icon,.more{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .logo{
+            .border-top{
+                height: 1px;
+                background-color: $sideLogoBorder1;
+            }
+            .border-bottom{
+                height: 1px;
+                background-color: $sideLogoBorder2;
+            }
+        }
+    }
+    .welcome{
+        background-color: $welcomeBgColor;
+    }
+    .titleModular{
+        span{
+            border-left: $color1 solid 3px;
+        }
+    }
+    .layui-this{
+        background-color: $color1 !important;
+    }
+    .liu-icon{
+        background-color: $color1 !important;
+    }
+    .progress{
+        background-color: $color1 !important;
+    }
+    .pns-table{
+        .thead{
+            background-color: $color1;
+        }
+        .tbody{
+            .tr:hover{
+                background-color: #dcf1ed;
+            }
+            .layui-btn{
+                padding: 0 10px !important;
+                min-width: auto !important;
+                height: 20px;
+                line-height: 20px !important;
+                background-color: transparent !important;
+                border: $color1 solid 1px;
+                color: $color1 !important;
+            }
+        }
+    }
+    .layui-tab.layui-tab-card{
+        .layui-this{
+            color: $color1 !important;
+        }
+    }
+    .layui-table{
+        thead{
+            th{
+                background-color: $color1 !important;
+            }
+        }
+        .layui-btn{
+            padding: 0 10px !important;
+            min-width: auto !important;
+            height: 20px;
+            line-height: 20px !important;
+            background-color: transparent !important;
+            border: $color1 solid 1px;
+            color: $color1 !important;
+        }
+    }
+    .layui-btn{
+        &.search-btn{
+            background-color: $color1 !important;
+        }
+        &.code-btn{
+            border: $color1 solid 1px !important;
+            color: $color1 !important;
+        }
+    }
+    .pns-search-abc{
+        >.more{
+            color: $color1;
+            .iconfont{
+                color: $color1;
+            }
+        }
+        .search{
+            .item,
+            .abc{
+                color: $color1;
+            }
+        }
+        .list,
+        .search{
+            .all.active,
+            .item.active{
+                .ok{
+                    color: $color1;
+                }
+                background-color: $color1;
+            }
+        }
+    }
+    .history-tabs{
+        .item:hover{
+            background-color: $tabColor;
+        }
+        .item.active{
+            background-color: $tabColor;
+            &:hover{
+                background-color: $tabColor;
+            }
+        }
+    }
+    .pns-page{
+        .button.active{
+            background-color: $color1;
+        }
+        .all-total {
+            color:$color1
+        }
+    }
+    .pns-ng-select{
+        .item{
+            color: #333;
+            &:hover,
+            &.active{
+                color: #fff;
+                background-color: $color1;
+            }
+        }
+    }
+    .sidebar-menu-layer{
+        .item-title{
+            color: $color1;
+        }
+        .item-text:hover{
+            color: $color1;
+        }
+    }
+    .step {
+        border-bottom: 2px solid $color1 !important;
+        .stepOne {
+            background: $color1 !important;
+        }
+        .spanOne {
+            color: #333 !important;
+        }
+    }
+    .no-step {
+        border-bottom: 1px solid #ddd !important;
+        .stepOne {
+            background: #eee !important;
+        }
+        .spanOne {
+            color: #999 !important;
+        }
+    }    
+    .layui-layer-btn0{
+        background-color: $color1 !important;
+        border: $color1 solid 1px !important;
+    }
+    .layui-btn-primary:hover{
+        color: $color1 !important;
+        border-color: $color1 !important;
+    }
+    .title-href{
+        color: $color1;
+    }
+}
+
+/* 灰蓝色 */
+.theme-huilan{
+    @include theme(
+        $side:#263441,
+        $sideHover:#1e446b,
+        $sideText:#a8aeb3,
+        $sideLogoBorder1: #192530,
+        $sideLogoBorder2: #364858,
+        $tabColor:#5185bd,
+        $color1:#5185bd,
+        $welcomeBgColor: #f0f4f8
+    );
+}
+
+/* 天蓝色 */
+.theme-tianlan{
+    @include theme(
+        $side:#003979,
+        $sideHover:#1b4792,
+        $sideText:#99b0c9,
+        $sideLogoBorder1: #072f5c,
+        $sideLogoBorder2: #1e559a,
+        $tabColor:#6492c3,
+        $color1:#2566ac,
+        $welcomeBgColor: #f0f0f8
+    );
+}
+
+/* 绿色 */
+.theme-guowanglv{
+    @include theme(
+        $side:#027462,
+        $sideHover:#039982,
+        $sideText:#b4d6d0,
+        $sideLogoBorder1: #055c4e,
+        $sideLogoBorder2: #219e8a,
+        $tabColor:#3eb2a3,
+        $color1:#41b6a3,
+        $welcomeBgColor: #f0f8f6
+    );
+}
+
+/* 灰黑色 */
+.theme-huihei{
+    @include theme(
+        $side:#564ea3,
+        $sideHover:#6861ad,
+        $sideText:#bbb8d9,
+        $sideLogoBorder1: #3a337f,
+        $sideLogoBorder2: #7169be,
+        $tabColor:#7b7ec0,
+        $color1:#6861ad,
+        $welcomeBgColor: #f6f4f9
+    );
+}

@@ -1,0 +1,15 @@
+.print-box{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+@media print{
+    .print-box{
+        width: 100%;
+    }
+    .print-hide{
+        display: none !important;
+    }
+}

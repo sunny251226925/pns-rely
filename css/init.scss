@@ -1,0 +1,85 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+*:focus {
+  outline: none;
+  outline-style:none; 
+  -moz-outline-style: none;
+}
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+  font: 14px/1.5 "Microsoft YaHei";
+}
+li{
+  list-style: none;
+}
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  outline: none;
+}
+input{
+  font-size: 12px !important;
+  color: #333;
+  outline: none;
+  text-shadow: none;
+  box-shadow: none;
+}
+input[type=button]{
+  cursor: pointer;
+}
+select{
+  border-color: #e6e6e6;
+}
+code{
+  display: inline;
+  border-radius: 4px;
+  padding: 4px 8px;
+  background-color: #3F3F3F;
+  color: #fff;
+  margin: 0 5px;
+  font-size: 12px;
+}
+::-ms-clear,::-ms-reveal {
+  display:none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #999;
+  font-size: 14px;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #999;
+  font-size: 14px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #999;
+  font-size: 14px;
+} 
+
+.app-select {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: solid 1px #000;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll rightright center transparent;
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  padding-right: 14px;
+}
+.app-select::-ms-expand {
+  display: none; /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+}
+
+.iconfont{
+  display: inline-block;
+}
