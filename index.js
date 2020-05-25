@@ -29,7 +29,7 @@ var pns_validate = require("./lib/pns-validate.js");
 
 (function (window, angular){ 
 
-    angular.module('pnsDirective', ['ng'])
+    angular.module('pnsRely', ['ng'])
 
     //按钮
     .directive('pnsButton', function () {
