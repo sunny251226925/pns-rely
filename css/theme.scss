@@ -248,6 +248,31 @@
     .title-href{
         color: $color1;
     }
+    .layui-tab-brief>.layui-tab-title .layui-this{
+        border-top: 2px solid $color1;
+    }
+    .layui-btn.layui-btn-primary.upload-btn{
+        width: 100px;
+        border: 1px solid $color1 !important;
+        color: $color1 !important;
+     }
+    .layui-btn.layui-btn-primary.upload-btn:hover{
+        background-color: $color1 !important;
+        color:#fff !important;
+    }
+    .no-exceed.exceed{
+        color: $color1 !important;
+    }
+    .pns-remark-show-item .content .download-box {
+        &:hover .info i{
+            color: $color1 !important;
+        }
+        .icon{
+            i{
+                color: $color1;
+            }
+        }
+    }
 }
 
 /* 灰蓝色 */
