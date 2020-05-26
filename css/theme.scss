@@ -263,13 +263,13 @@
     .no-exceed.exceed{
         color: $color1 !important;
     }
-    .pns-remark-show-item .content .download-box {
+    .download-box {
         &:hover .info i{
             color: $color1 !important;
         }
         .icon{
             i{
-                color: $color1;
+                color: $color1 !important;
             }
         }
     }
