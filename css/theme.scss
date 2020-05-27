@@ -248,8 +248,10 @@
     .title-href{
         color: $color1;
     }
-    .layui-tab-brief>.layui-tab-title .layui-this{
-        border-top: 2px solid $color1;
+    .layui-tab.layui-tab-brief .layui-this{
+        background-color: #fff !important;
+        border-top: 2px solid $color1 !important;
+        color: #333 !important;
     }
     .layui-btn.layui-btn-primary.upload-btn{
         width: 100px;
@@ -263,14 +265,12 @@
     .no-exceed.exceed{
         color: $color1 !important;
     }
-    .download-box {
-        &:hover .info i{
-            color: $color1 !important;
-        }
+    .pns-remark-show-item .content .download-box {
         .icon{
-            i{
-                color: $color1 !important;
-            }
+            color: $color1 !important;
+        }
+        .info i:hover{
+            color: $color1 !important;
         }
     }
 }
