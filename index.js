@@ -147,9 +147,9 @@ var pns_validate = require("./lib/pns-validate.js");
     })
 
     //下拉列表
-    .directive("pnsSelect",function () {
-        return pns_select();
-    })
+    .directive("pnsSelect",["httpService","$rootScope", function (httpService,$rootScope) {
+        return pns_select(httpService,$rootScope);
+    }])
 
     //表单提交验证
     .directive("pnsSubmit",["regex",function (regex) {
