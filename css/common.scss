@@ -34,6 +34,9 @@ $bg-color-f9: #f9f9f9;
   box-sizing: $value;
 }
 
+.box-sizing{
+  @include box-sizing(border-box);
+}
 .router-active{
   color: $theme;
 }
@@ -215,6 +218,13 @@ $bg-color-f9: #f9f9f9;
 .m-b-10{
   margin-bottom: 10px;
 }
+.m-r-10{
+  margin-right: 10px;
+}
+.m-l-10{
+  margin-left: 10px;
+}
+
 .padding-15{
   padding: 15px;
   @include box-sizing(border-box);
@@ -742,21 +752,29 @@ $page-border-radius: 3px;
   width: 100%;
   clear: both;
   margin-top: 15px;
+  margin-bottom: 15px;
   max-height: 400px;
   overflow: auto;
   min-height: 0%;
+  .box{
+    height: 309px;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: $border-color-ddd;
+    padding: 0 !important;
+    @include box-sizing(border-box);
+  }
 }
 .table{
   position: relative;
   width: 99.9%;
-  border-width: 0 0 1px 1px;
-  border-style: solid;
-  border-color: $border-color-ddd;
-  border-collapse:collapse;
+  border-collapse: collapse;
+  border-bottom: $border-color-ddd solid 1px;
   &.border{
     border: 1px solid $border-color-ddd;
   }
   &.search{
+    border-left: $border-color-ddd solid 1px;
     tr{
       border-bottom: $border-color-ddd solid 1px;
     }
@@ -835,8 +853,6 @@ $page-border-radius: 3px;
   line-height: 25px;
   line-height: 25px;
   input{
-    position: relative;
-    top: 2px;
     margin-right: 5px;
     margin-left: 2px;
   }
@@ -868,13 +884,30 @@ $searchAbc-height:26px;
 .pns-search-abc{
   position: relative;
   width: 100%;
-  padding-right: 40px;
   overflow: hidden;
   @include box-sizing(border-box);
+  .result-search{
+    position: relative;
+    width: 100%;
+    height: 48px;
+    padding: 10px 30px 10px 0;
+    @include box-sizing(border-box);
+    input{
+      position: absolute;
+      right: 30px;
+    }
+    i{
+      position: absolute;
+      right: 40px;
+      top: 16px;
+      font-size: 14px;
+      color: $font-color-888;
+    }
+  }
   >.more{
     position: absolute;
     top: 0;
-    right: 10px;
+    right: 0;
     font-size: 12px;
     line-height: 23px;
     cursor: pointer;
@@ -1281,5 +1314,35 @@ $searchAbc-height:26px;
     .iconfont{
       position: absolute;
       right: 8px;
+      top: 6px;
+      font-size: 14px;
+      color: #888;
     }
+}
+.moreList{
+  position: relative;
+  width: 100%;
+  border-top: #e8eaec solid 1px;
+  border-left: #e8eaec solid 1px;
+  overflow: hidden;
+  @include box-sizing(border-box);
+  .item{
+    float: left;
+    width: 20%;
+    height: 48px;
+    line-height: 16px;
+    padding: 16px 0;
+    border-right: #e8eaec solid 1px;
+    border-bottom: #e8eaec solid 1px;
+    @include box-sizing(border-box);
+    .label{
+      padding-left: 18px;
+      input{
+        margin-right: 3px;
+      }
+    }
+  }
+}
+.moreTitle{
+  padding: 20px 0;
 }

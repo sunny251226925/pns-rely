@@ -33,6 +33,10 @@ input{
 input[type=button]{
   cursor: pointer;
 }
+input[type=checkbox]{
+  position: relative;
+  top: 2px;
+}
 select{
   border-color: #e6e6e6;
 }
