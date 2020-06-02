@@ -132,8 +132,8 @@ var pns_validate = require("./lib/pns-validate.js");
     })
 
     //搜索表单-综合所有元素，为适配动态搜索栏
-    .directive('pnsSearch', ["$rootScope", "httpService", function ($rootScope, httpService) {
-        return pns_search($rootScope, httpService);
+    .directive('pnsSearch', ["$rootScope", "httpService","sessionFactory", "$location", function ($rootScope, httpService, sessionFactory, $location) {
+        return pns_search($rootScope, httpService, sessionFactory, $location);
     }])
 
     //下拉列表-多选
