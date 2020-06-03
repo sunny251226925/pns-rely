@@ -157,13 +157,13 @@ var pns_validate = require("./lib/pns-validate.js");
     }])
     
     //table组件-静态数据
-    .directive('pnsTableData',function () {
+    .directive("pnsTableData",function () {
         return pns_table_data();
     })
 
     //table组件-动态列表头
-    .directive('pnsTable', ['httpService', "$rootScope", function (httpService, $rootScope) {
-        return pns_table(httpService, $rootScope);
+    .directive("pnsTable", ["httpService", "sessionFactory", "$location", function (httpService, sessionFactory, $location) {
+        return pns_table(httpService, sessionFactory, $location);
     }])
 
     //表单元素验证

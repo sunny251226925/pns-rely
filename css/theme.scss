@@ -21,6 +21,16 @@
                 .layui-nav-more{
                     color: $color1 !important;
                 }
+                dd{
+                    a:link{ background-color: transparent !important; color: #fff !important; }
+                    a:visited { background-color: transparent !important; color: #fff !important;}
+                    a:active { background-color: transparent !important; color: #fff !important;}
+                    a:hover{
+                        background-color: $color1 !important;
+                        color: #fff !important;
+                    }
+                    a{ background-color: #fff !important; color: #888 !important;}
+                }
             }
         }
     }
