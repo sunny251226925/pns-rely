@@ -508,8 +508,7 @@ $page-border-radius: 3px;
     .list{
       position: relative;
       width: 100%;
-      min-height: 26px;
-      max-height: 130px;
+      height: 130px;
       background-color: #fff;
       z-index: 9;
       overflow-x: hidden;
