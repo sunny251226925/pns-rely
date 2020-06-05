@@ -1406,3 +1406,30 @@ $searchAbc-height:26px;
 .moreTitle{
   padding: 20px 0;
 }
+.pns-list-select{
+  padding-top: 5px;
+  max-height: 80px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  .item{
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 6px;
+    margin-right: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 12px;
+    background-color: #f9f9f9;
+    color: #333;
+    background-color: #f3f3f3;
+    border-radius: 2px;
+    @include box-sizing(border-box);
+    .title{
+      margin-right: 3px;
+    }
+    i{
+      font-size: 12px;
+      cursor: pointer;
+    }
+  }
+}
