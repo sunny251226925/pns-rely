@@ -1,5 +1,5 @@
 
-@mixin theme($side,$sideHover,$sideText,$sideLogoBorder1,$sideLogoBorder2,$tabColor,$color1,$welcomeBgColor) {
+@mixin theme($side,$sideHover,$sideText,$sideLogoBorder1,$sideLogoBorder2,$tabColor,$color1,$welcomeBgColor,$dateActive,$dateHover) {
     .header{
         .header-main-left{
             .sys-name,
@@ -290,6 +290,24 @@
     .theme-font-color{
         color: $color1;
     }
+    .laydate-btns-confirm:hover,
+    .laydate-btns-clear:hover{
+        color: $color1 !important;
+    }
+    .layui-laydate-header{
+        background-color: $color1 !important;
+    }
+    #layui-laydate1 .layui-laydate-content{
+        .layui-this{
+            background-color: $dateActive !important;
+        }
+        .laydate-selected{
+            background-color: $dateHover !important;
+        }
+        .laydate-selected:hover{
+            background-color: $dateHover !important;
+        }
+    }
 }
 
 /* 灰蓝色 */
@@ -302,7 +320,9 @@
         $sideLogoBorder2: #364858,
         $tabColor:#5185bd,
         $color1:#5185bd,
-        $welcomeBgColor: #f0f4f8
+        $welcomeBgColor: #f0f4f8,
+        $dateActive: #2566ac,
+        $dateHover: #a8c2de
     );
 }
 
@@ -316,7 +336,9 @@
         $sideLogoBorder2: #1e559a,
         $tabColor:#6492c3,
         $color1:#2566ac,
-        $welcomeBgColor: #f0f0f8
+        $welcomeBgColor: #f0f0f8,
+        $dateActive: #5185bd,
+        $dateHover: #b9cee5
     );
 }
 
@@ -330,7 +352,9 @@
         $sideLogoBorder2: #219e8a,
         $tabColor:#3eb2a3,
         $color1:#41b6a3,
-        $welcomeBgColor: #f0f8f6
+        $welcomeBgColor: #f0f8f6,
+        $dateActive: #41b6a3,
+        $dateHover: #b3e2da
     );
 }
 
@@ -344,6 +368,8 @@
         $sideLogoBorder2: #7169be,
         $tabColor:#7b7ec0,
         $color1:#6861ad,
-        $welcomeBgColor: #f6f4f9
+        $welcomeBgColor: #f6f4f9,
+        $dateActive: #6861ad,
+        $dateHover: #c3c0de
     );
 }
