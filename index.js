@@ -47,8 +47,8 @@ var pns_validate = require("./lib/pns-validate.js");
     }])
 
     //佐证材料模板
-    .directive('pnsEvidence', ['$http', "sessionFactory", function ($http, sessionFactory) {
-        return pns_evidence($http, sessionFactory);
+    .directive('pnsEvidence', ["$rootScope", function ($rootScope) {
+        return pns_evidence($rootScope);
     }])
     
     //导出-静态表头
