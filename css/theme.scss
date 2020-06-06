@@ -297,15 +297,31 @@
     .layui-laydate-header{
         background-color: $color1 !important;
     }
-    #layui-laydate1 .layui-laydate-content{
-        .layui-this{
-            background-color: $dateActive !important;
-        }
-        .laydate-selected{
-            background-color: $dateHover !important;
-        }
-        .laydate-selected:hover{
-            background-color: $dateHover !important;
+    #layui-laydate1,
+    #layui-laydate2,
+    #layui-laydate3,
+    #layui-laydate4,
+    #layui-laydate5,
+    #layui-laydate6,
+    #layui-laydate7,
+    #layui-laydate8,
+    #layui-laydate9,
+    #layui-laydate10{
+        .layui-laydate-content{
+            .layui-this{
+                background-color: $dateActive !important;
+            }
+            .laydate-selected{
+                background-color: $dateHover !important;
+                color: #333 !important;
+                &.laydate-day-next,
+                &.laydate-day-prev{
+                    color: #ddd !important;
+                }
+            }
+            .laydate-selected:hover{
+                background-color: $dateHover !important;
+            }
         }
     }
 }
