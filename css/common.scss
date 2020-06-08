@@ -10,6 +10,25 @@ ng:form{
   display:block;
 }
 
+div::-webkit-scrollbar{
+  width: 8px;
+  height: 8px;
+}
+div::-webkit-scrollbar-track{
+  background: rgb(239, 239, 239);
+  border-radius:2px;
+}
+div::-webkit-scrollbar-thumb{
+  background: #bfbfbf;
+  border-radius: 8px;
+}
+div::-webkit-scrollbar-thumb:hover{
+  background: #333;
+}
+div::-webkit-scrollbar-corner{
+  background: #333;
+}
+
 /* 公共色值 */
 $theme: #37a892;
 $font-color-515: #515a6e;
@@ -173,6 +192,20 @@ $bg-color-f9: #f9f9f9;
       border-bottom: #dee2e5 solid 1px;
       &:last-child{
         border-bottom: 0;
+      }
+    }
+    .organize{
+      .pns-row.buttons{
+        padding-top: 10px;
+      }
+      .pns-padding-top-15 {
+        padding-top: 10px !important;
+        .layui-form-item{
+              margin-bottom: 10px !important;
+          }
+      }
+      .table-box{
+        margin-top: 5px !important;
       }
     }
   }
@@ -642,9 +675,13 @@ $page-border-radius: 3px;
 }
 
 .pns-row.buttons{
-   padding-top: 15px;
+   padding-top: 0;
    .layui-btn{
      float: left;
+   }
+   .layui-btn{
+     height: 26px !important;
+     line-height: 26px !important;
    }
 }
 .layui-nav .layui-nav-item>a{
@@ -750,12 +787,13 @@ $page-border-radius: 3px;
   position: relative;
   width: 100%;
   clear: both;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 15px;
   max-height: 400px;
   min-height: 0%;
-  .box{
-    height: 309px;
+  .frame{
+    height: 328px;
+    max-height: 328px;
     border-width: 0 1px 1px 1px !important;
     border-style: solid;
     border-color: $border-color-ddd;
@@ -765,7 +803,7 @@ $page-border-radius: 3px;
   }
   .operation{
     position: absolute;
-    top: -45px;
+    top: -36px;
     right: 0;
     width: 100px;
     height: 30px;
@@ -786,10 +824,8 @@ $page-border-radius: 3px;
   }
   .autoCloumn{
     position: fixed;
-    top: 60px;
-    right: 55px;
     width: 150px;
-    height: 390px;
+    height: 300px;
     padding: 5px 0;
     overflow-x: hidden;
     overflow-y: auto;
@@ -1073,7 +1109,7 @@ $searchAbc-height:26px;
 .pns-search{
   position: relative;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   .content{
     border-radius: 2px;
     tr{
@@ -1370,7 +1406,7 @@ $searchAbc-height:26px;
     .iconfont{
       position: absolute;
       right: 8px;
-      top: 6px;
+      top: 1px;
       font-size: 14px;
       color: #888;
     }
