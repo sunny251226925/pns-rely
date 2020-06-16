@@ -823,8 +823,11 @@ $page-border-radius: 3px;
   max-height: 400px;
   min-height: 0%;
   .frame{
-    height: 309px;
-    max-height: 309px;
+    height: 328px;
+    max-height: 328px;
+    border-width: 0 1px 1px 1px !important;
+    border-style: solid;
+    border-color: $border-color-ddd;
     padding: 0 !important;
     overflow: auto;
     @include box-sizing(border-box);
@@ -886,7 +889,6 @@ $page-border-radius: 3px;
   width: 99.9%;
   border-collapse: collapse;
   border-bottom: $border-color-ddd solid 1px;
-  border-left: $border-color-ddd solid 1px;
   &.border{
     border: 1px solid $border-color-ddd;
   }
@@ -998,9 +1000,30 @@ $searchAbc-height:26px;
     width: 640px !important;
   }
 }
-.pns-input-date{
-  width: 165px !important;
+.pns-date{
+  position: relative;
+  width: 180px;
+  height: 28px;
+  padding-right: 10px;
+  border: $border-color-ddd solid 1px;
+  border-radius: 2px;
+  .pns-input-date{
+    position: relative;
+    width: 100% !important;
+    border: 0 !important;
+  }
+  .icon{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 16px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #888;
+  }
 }
+
 .pns-search-abc{
   position: relative;
   width: 100%;
