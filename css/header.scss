@@ -89,8 +89,35 @@ $header-height: 48px;
       text-align: center;
       img{
           display: inline-block;
-          height: 33px;
+          height: 40px;
       }
+  }
+  .icon-favourite{
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+  }
+ 
+  .layui-nav .layui-nav-child.favNav{
+    dd{
+      width: 160px;
+      cursor: pointer;
+      span{
+        height: 30px;
+        line-height: 30px;
+        padding-left: 10px;
+        text-align: left;
+        .nav-title{
+          float: left;
+        }
+        .iconremove{
+          float: right;
+          width: 20px;
+          font-size: 12px;
+          padding-left: 15px;
+        }
+      }
+    }
   }
 }
 .logo-center {

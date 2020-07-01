@@ -976,6 +976,11 @@ $page-border-radius: 3px;
   }
 }
 
+.border-line{
+  border-right: #ddd solid 1px;
+  margin: 0 10px;
+}
+
 /* 搜索栏 */
 $searchAbc-height:26px;
 .search-label{

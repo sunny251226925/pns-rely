@@ -17,8 +17,7 @@
             .layui-nav-item{
                 >a,
                 dd,
-                .icongengduo-shu,
-                .layui-nav-more{
+                .icongengduo-shu{
                     color: $color1 !important;
                 }
                 dd{
@@ -32,6 +31,10 @@
                             color: #fff !important;
                         }
                     }
+                }
+                .screen:hover,
+                .mds:hover{
+                    color: $color1;
                 }
             }
         }
@@ -54,8 +57,7 @@
             .layui-nav-item{
                 >a,
                 dd,
-                .icongengduo-shu,
-                .layui-nav-more{
+                .icongengduo-shu{
                     color: #fff !important;
                 }
             }
