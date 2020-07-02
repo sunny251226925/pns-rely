@@ -713,6 +713,33 @@ $page-border-radius: 3px;
   resize: none;
 }
 
+.pns-step{
+  overflow: hidden;
+  .item{
+    float: left;
+    text-align: center;
+    padding-bottom: 16px;
+    border-bottom: #ddd solid 1px;
+    .number{
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #eee;
+      font-size: 20px;
+      line-height: 36px;
+      text-align: center;
+      color: #999;
+      margin-right: 5px;
+    }
+    .title{
+      display: inline-block;
+      font-size: 16px;
+      color: #999;
+    }
+  }
+}
+
 .error-tips{
   position: absolute;
   top: 100%;
@@ -974,11 +1001,6 @@ $page-border-radius: 3px;
     margin-right: 5px;
     margin-left: 2px;
   }
-}
-
-.border-line{
-  border-right: #ddd solid 1px;
-  margin: 0 10px;
 }
 
 /* 搜索栏 */

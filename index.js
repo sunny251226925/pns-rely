@@ -22,6 +22,7 @@ var pns_search = require("./lib/pns-search.js");
 var pns_select_multiple = require("./lib/pns-select-multiple.js");
 var pns_select_search = require("./lib/pns-select-search.js");
 var pns_select = require("./lib/pns-select.js");
+var pns_step = require("./lib/pns-step.js");
 var pns_submit = require("./lib/pns-submit.js");
 var pns_table_data = require("./lib/pns-table-data.js");
 var pns_table = require("./lib/pns-table.js");
@@ -150,6 +151,11 @@ var pns_validate = require("./lib/pns-validate.js");
     .directive("pnsSelect",["httpService","$rootScope", function (httpService,$rootScope) {
         return pns_select(httpService,$rootScope);
     }])
+
+    //步骤条
+    .directive("pnsStep",function () {
+        return pns_step();
+    })
 
     //表单提交验证
     .directive("pnsSubmit",["regex",function (regex) {

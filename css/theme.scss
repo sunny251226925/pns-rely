@@ -17,7 +17,8 @@
             .layui-nav-item{
                 >a,
                 dd,
-                .icongengduo-shu{
+                .icongengduo-shu,
+                .layui-nav-more{
                     color: $color1 !important;
                 }
                 dd{
@@ -31,10 +32,6 @@
                             color: #fff !important;
                         }
                     }
-                }
-                .screen:hover,
-                .mds:hover{
-                    color: $color1;
                 }
             }
         }
@@ -57,7 +54,8 @@
             .layui-nav-item{
                 >a,
                 dd,
-                .icongengduo-shu{
+                .icongengduo-shu,
+                .layui-nav-more{
                     color: #fff !important;
                 }
             }
@@ -238,10 +236,13 @@
     }
     .step {
         border-bottom: 2px solid $color1 !important;
-        .stepOne {
+        .stepOne,
+        .number{
             background: $color1 !important;
+            color: #fff !important;
         }
-        .spanOne {
+        .spanOne,
+        .title {
             color: #333 !important;
         }
     }

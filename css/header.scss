@@ -89,35 +89,8 @@ $header-height: 48px;
       text-align: center;
       img{
           display: inline-block;
-          height: 40px;
+          height: 33px;
       }
-  }
-  .icon-favourite{
-      width: 18px;
-      height: 18px;
-      cursor: pointer;
-  }
- 
-  .layui-nav .layui-nav-child.favNav{
-    dd{
-      width: 160px;
-      cursor: pointer;
-      span{
-        height: 30px;
-        line-height: 30px;
-        padding-left: 10px;
-        text-align: left;
-        .nav-title{
-          float: left;
-        }
-        .iconremove{
-          float: right;
-          width: 20px;
-          font-size: 12px;
-          padding-left: 15px;
-        }
-      }
-    }
   }
 }
 .logo-center {
@@ -204,6 +177,7 @@ $header-height: 48px;
   width: 100%;
   height: 100%;
   z-index: 99;
+  transition: all .3s;
   .system_layder_mask{
     position: absolute;
     width: 100%;
@@ -215,10 +189,11 @@ $header-height: 48px;
   }
   .system_layder_main{
     position: absolute;
-    right: 0;
+    right: -260px;
     top: 0;
     width: 260px;
     height: 100%;
+    transform: translate(-260px,0);
     background-color: #f7f8f8;
     z-index: 2;
     .title{
