@@ -1,6 +1,6 @@
 {
   "name": "pns-rely",
-  "version": "1.80.6",
+  "version": "1.80.8",
   "description": "angularjs依赖包",
   "main": "index.js",
   "scripts": {
