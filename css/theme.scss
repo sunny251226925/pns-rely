@@ -21,6 +21,10 @@
                 .layui-nav-more{
                     color: $color1 !important;
                 }
+                .screen:hover,
+                .mds:hover{
+                    color: $color1 !important;
+                }
                 dd{
                     min-width: 90px !important;
                     span{ 
