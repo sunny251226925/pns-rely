@@ -295,9 +295,6 @@
             color: $color1 !important;
         }
     }
-    .theme-font-color{
-        color: $color1;
-    }
     .laydate-btns-confirm:hover,
     .laydate-btns-clear:hover{
         color: $color1 !important;
@@ -305,6 +302,18 @@
     .layui-laydate-header{
         background-color: $color1 !important;
     }
+    .context-menu{
+        .item:hover{
+            background-color: $color1;
+        }
+    }
+    .theme-font-color{
+        color: $color1;
+    }
+    .theme-bg-color{
+        color: $color1;
+    }
+
     #layui-laydate1,
     #layui-laydate2,
     #layui-laydate3,
