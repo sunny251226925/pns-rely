@@ -815,6 +815,9 @@ $page-border-radius: 3px;
     overflow-x: hidden;
     overflow-y: auto;
     @include box-sizing(border-box);
+    .layui-form-item{
+      margin-bottom: 0 !important;
+    }
     .layui-border-box.layui-table-view{
       min-height: 200px;
     }
@@ -1618,4 +1621,8 @@ $searchAbc-height:26px;
       color: #999;
     }
   }
+}
+.pns-tips{
+  font-size: 12px;
+  color: #999;
 }
