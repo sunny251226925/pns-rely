@@ -194,10 +194,6 @@ $bg-color-f9: #f9f9f9;
     background-color: #fff;
     .box{
       padding: 0 24px;
-      border-bottom: #dee2e5 solid 1px;
-      &:last-child{
-        border-bottom: 0;
-      }
     }
     .organize{
       .pns-row.buttons{
