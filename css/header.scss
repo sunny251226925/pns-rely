@@ -145,11 +145,12 @@ $header-height: 48px;
                 top: 36px;
                 left: 0;
                 min-width: 240px;
-                height: 500px;
+                min-height: 500px;
                 background-color: #f4f4f4;
                 border-width: 1px;
                 border-style: solid;
                 border-color: #ddd;
+                z-index: 999;
             }
             .meun-item{
                 margin-right: 20px;

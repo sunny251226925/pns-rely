@@ -862,8 +862,9 @@ $page-border-radius: 3px;
   clear: both;
   margin-top: 10px;
   margin-bottom: 15px;
-  max-height: 400px;
+  max-height: 360px;
   min-height: 0%;
+  overflow: auto;
   .frame{
     padding: 0 !important;
     overflow: auto;
