@@ -31,6 +31,24 @@ $header-height: 48px;
         float: left;
       }
     }
+    .icon-favourite{
+      width: 18px;
+      height: 18px;
+    }
+    .favNav{
+      dd{
+        padding: 0 15px;
+        height: 35px;
+        line-height: 35px;
+        cursor: pointer;
+        .nav-title{
+          float: left;
+        }
+        .iconremove{
+          float: right;
+        }
+      }
+    }
   }
   .header-avatar{
     width: 32px;

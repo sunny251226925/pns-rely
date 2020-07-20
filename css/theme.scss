@@ -38,6 +38,14 @@
                     }
                 }
             }
+            .favNav{
+                dd{
+                  &:hover{
+                    background-color: $color1;
+                    color: $color1;
+                  }
+                }
+            }
         }
     }
     .header-theme{
